@@ -13,7 +13,7 @@ with open("models/wine-95-fixed.pkl", "rb") as file:
 
 
 class Wine(BaseModel):
-    batches: List[conlist(item_type=float, min_items=13, max_items=13)]
+    batches: List[conlist(item_type=float)]
 
 
 @app.post("/predict")
